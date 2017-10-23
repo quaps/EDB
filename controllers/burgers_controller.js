@@ -22,7 +22,7 @@ router.post("/api/burger", function(req, res) {
 router.put("/api/burger/:id", function(req, res) {
   var condition = "id = " + req.params.id;
   console.log("condition", condition);
-  cat.update({
+  burger.update({
     name: req.body.name
   }, condition, function(result) {
     if (result.changedRows == 0) {

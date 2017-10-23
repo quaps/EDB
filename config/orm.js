@@ -24,22 +24,15 @@ var orm = {
       cb(result);
     });
   },
-  create: function(table, cols, vals, cb) {
-    var queryString = "INSERT INTO " + table;
-    queryString += " (";
-    queryString += cols.toString();
-    queryString += ") ";
-    queryString += "VALUES (";
-    queryString += printQuestionMarks(vals.length);
-    queryString += ") ";
-    console.log(queryString);
-    connection.query(queryString, vals, function(err, result) {
-      if (err) {
-        throw err;
-      }
-      cb(result);
-    });
-  },
+create: function(input, value, callback){
+		connection.query('INSERT INTO ' +input+' (burger_name) VALUES ("'+value+'");', function(err, result){
+			if (err){
+				throw err;
+			}
+
+			callback(result);
+		})
+},
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
     queryString += " SET ";

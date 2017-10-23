@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>burgers_db</string>
+			<key>host</key>
+			<string>localhost</string>
+			<key>name</key>
+			<string>localhost</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSocketConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClJpZNIeHy0uXxAPTlNN
+			dXRhYmxlU3RyaW5noy0vI1hOU1N0cmluZ9IeHzEyXk5TTXV0YWJs
+			ZUFycmF5ozEzI1dOU0FycmF50h4fIjWiIiNfEA9OU0tleWVkQXJj
+			aGl2ZXLRODlUZGF0YYABAAgAEQAaACMALQAyADcARQBLAFIAWgBl
+			AGwAcAByAHQAdgB6AHwAfgCAAIIAhwCMAJEAugDBAMIAwwDFAMoA
+			1QDeAPQA+AEFAQ4BEwEVARcBGQEeASgBKgEtATIBRAFIAVEBVgFl
+			AWkBcQF2AXkBiwGOAZMAAAAAAAACAQAAAAAAAAA6AAAAAAAAAAAA
+			AAAAAAABlQ==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {600, 615}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>INSERT INTO burgers (burger_name, devoured, date)
+VALUES ("Kuma Metallica", yes, 12:00);
+
+INSERT INTO burgers (burger_name, devoured, date)
+VALUES ("Kuma Megadeath", yes, 12:00);
+
+INSERT INTO burgers (burger_name, devoured, date)
+VALUES ("Kuma Judas Priest", no, 12:00);
+
+</string>
+			<key>table</key>
+			<string>burgers</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>INSERT INTO burgers (burger_name, devoured, date)
+VALUES ("Kuma Metallica", yes, 12:00:00);
+INSERT INTO burgers (burger_name, devoured, date)
+VALUES ("Kuma Megadeath", yes, 12:00:00);
+INSERT INTO burgers (burger_name, devoured, date)
+VALUES ("Kuma Judas Priest", no, 12:00:00)</string>
+		<string>DROP DATABASE IF EXISTS burgers_db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
+CREATE TABLE burgers(
+  id INT NOT NULL AUTO_INCREMENT,
+  burger_name VARCHAR(100) NOT NULL,
+  devoured VARCHAR(45) NOT NULL,
+  date TIMESTAMP,
+  PRIMARY KEY (id)
+)</string>
+		<string>DROP DATABASE IF EXISTS burgers_db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
+CREATE TABLE auctions(
+  id INT NOT NULL AUTO_INCREMENT,
+  burger_name VARCHAR(100) NOT NULL,
+  devoured VARCHAR(45) NOT NULL,
+  date TIMESTAMP,
+  PRIMARY KEY (id)
+)</string>
+		<string>CREATE TABLE `chirps` (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  author varchar(100) NOT NULL,
+  chirp varchar(100) NOT NULL,
+  time_created int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+)</string>
+		<string>CREATE TABLE `chirps` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `author` varchar(100) NOT NULL,
+  `chirp` varchar(100) NOT NULL,
+  `time_created` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) 
+)</string>
+		<string>USE chirpy</string>
+		<string>CREATE DATABASE chirpy</string>
+		<string>DROP DATABASE chirpy</string>
+		<string>DROP DATABASE IF EXISTS greatBay_DB;
+CREATE DATABASE greatBay_DB;
+USE greatBay_DB;
+CREATE TABLE auctions(
+  id INT NOT NULL AUTO_INCREMENT,
+  item_name VARCHAR(100) NOT NULL,
+  category VARCHAR(45) NOT NULL,
+  starting_bid INT default 0,
+  highest_bid INT default 0,
+  PRIMARY KEY (id)
+)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.6.35</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
